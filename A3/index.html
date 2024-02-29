@@ -13,7 +13,7 @@
 		</h1>
 
 		<p>
-			<strong>Your Name</strong> — <em>Your MIT Email Address</em>
+			<strong>Jin Gao</strong> — <em>gaojin@mit.edu</em>
 		</p>
 	</header>
 
@@ -21,27 +21,67 @@
 		<section>
 			<h2>Phase One: Sketching Visualizations</h2>
 
+			<h3> Design-Research Question Statement </h3>
+			<h3> Generational Echoes: Tracing the Dynamics of Birth and Mortality in America, 1900-2000 </h3>
+			
+			<h4> Introduction </h4>
+			<p>
+			The 20th century was a period of profound transformation for the United States, marked by significant population growth influenced by both internal developments and global events. The provided dataset gave us the starting and the ending point. However, the history is continuous. Is there a way that we can use the visualization to express such process?
+			</p>
+
+			<p>
+			In this visualization, I want to show the dramatic change of US population under the impacts of major events happened during the 20th century. With the provided population change with 100 years of gap, I was curious about their middle stage, what causes the changes of the population and what reasons are deeply rooted with the time.
+		</p>
+
+		<p>
+			However, seldom people can live more than 100 years old, meaning these two groups of people has few direct connection. To answer my question, we have to introduce two additional data: 
+		</p>
+
+		<ul>
+			- the middle state: the population state in 1950s 
+			- the mortality statistics: provide the mortality information with reasons to death
+		</ul>
+
+		<h3>The 1900s</h3>
+		<p>
+			The 1900s marked the beginning of United States's unprecedented changes. From a primarily agrarian society to an industrial powerhouse, and the invention of automobility, triggered significant urbanization and industrialization. It marked the beginning of the Progressive Movement. Citizens started to be aware of the social problems of poverty, labor rights, and women's suffrage, which triggered significant strikes and the rise of labor unions.
+		</p>
+
+		<h3>The 1950s</h3>
+		<p>
+			The 1950s serves as a pivotal point for our visualization. Marked by the aftermath of World War II, the beginning of the Cold War, and significant social and economic transformations, this era experienced the baby boom, fast urbanization, and migration patterns that significantly influenced the population's growth and distribution of the United States
+		</p>
+
+		<h3>The 2000s</h3>
+		<p>
+			The end of 20 century, while also the beginning of the 21st century, was marked by profound technological advancements, globalization, and significant social changes that continued to reshape the population landscape of the United States. This era shows the maturation of the baby boom generation and the advanced medical achievements that significantly lowered the death rate.
+		</p>
+
+		<p>
+			I manually cleaned and integrated two additional data to the given dataset, the data proecesing process is recorded as the appendix in the last section of this assignment.
+		</p>
+		
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="./images/sketch1.png" alt="sketch 1" />
 				<figcaption>
-					BRIEF CAPTION HERE.
+					Sketch 1: A modified Sankey diagram to represent the population flow
 				</figcaption>
 			</figure>
 
 			<p>
-				Design Rationale for Sketch 1:
+				Design Rationale for Sketch 1: 
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>Express Relationships: Using the style of Sanky diagrams, this sketch aims to show the three interconnected generation of population and their relationships, in a simplified way.</li>
+				<li>Efficienty: It is effective at depicting the flow of populations or resources between different states or groups. The division between the age group is clear.</li>
+				<li>High Adaptbility: Efficient layout offers plenty of rooms to mark key historical events, explainations. It's also effective to accomodate additional data for future changes.  </li>
 			</ul>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="./images/sketch2.png" alt="sketch 2" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Sketch 2:
 				</figcaption>
 			</figure>
 
@@ -56,9 +96,9 @@
 			</ul>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="./images/sketch3.png" alt="sketch 3" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Sketch 3:
 				</figcaption>
 			</figure>
 
@@ -67,7 +107,7 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
+				<li>Gamified visualization: this sketch represents the flow of population as an arcade game in three stages.. </li>
 				<li>RATIONALE_2</li>
 				<li>RATIONALE_3</li>
 			</ul>
@@ -95,8 +135,31 @@
 			<h2>Design Process & Design Decisions</h2>
 
 			<p>
-        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
+        Design Progress 1:
       </p>
+
+	  <figure>
+		<img src="images/intermediate1.png" alt="Intermediate Plot 1" />
+		<figcaption>
+		Intermediate Plot 1: 
+		</figcaption>
+	</figure>
+
+
+	<figure>
+		<img src="images/intermediate1.png" alt="Intermediate Plot 1" />
+		<figcaption>
+		Intermediate Plot 2: 
+		</figcaption>
+	</figure>
+
+
+	<figure>
+		<img src="images/intermediate1.png" alt="Intermediate Plot 1" />
+		<figcaption>
+		Intermediate Plot 3: 
+		</figcaption>
+	</figure>
 
 
       <h3>Reflection</h3>
@@ -106,5 +169,138 @@
       </p>
 		</section>
 	</main>
+
+<main>
+
+
+</main>
+<section>
+	<h2>Appendix</h2>
+
+        <h3>Data Processing</h3>
+
+        <a
+          href= "https://docs.google.com/spreadsheets/d/1Rxz1JBNBhcQTkYL9aWu7wguDD5kLSMzd/edit?usp=sharing&ouid=112440460323800138384&rtpof=true&sd=true" 
+          >Processed Data File</a
+        >
+
+        <h4>Add 1950 Population Data</h4>
+
+        <img src="./images/merge_metadata.png" alt="merged_metadata.png" class="image-s"/>
+        <figcaption class="center-text">Merged Metadata</figcaption>
+
+        <h4>Geographical Information Processing:</h4>
+        <p>
+          <li>Calculate area using ArcGIS Pro using Calculate Geometry</li>
+          <li>
+            Export the processed GIS data into Excel using table to excel tool
+          </li>
+          <li>Perform further analysis using Excel and Tableau</li>
+        </p>
+        <img src="./images/gis_processing.png" alt="gis processing" class="image-s"/>
+        <figcaption class="center-text">GIS Processing</figcaption>
+        
+        <h4>Calculate Distance to Boston:</h4>
+        <p>
+          <li>First find the centroid of each municipality</li>
+          <li>
+            Calculate the distance between bosten centroid and municipalities
+          </li>
+          <li>
+            Divide minicipalities into urban, suburban, etc, according to
+            distances
+          </li>
+        </p>
+        <img src="./images/calculate_distance.png" alt="calculate distance" class="image-s"/>
+        <figcaption class="center-text">Calculate Distance</figcaption>
+
+        <h4>Calculate Average Income:</h4>
+        <p>
+          <li>
+            Aggregate the municipalities divided by only_single_familiy using
+            Panda
+          </li>
+          <li>
+            Calculate average income according to the amount of households *
+            related income / total household numbers
+          </li>
+        </p>
+      </section>
+
+      <section>
+        <h2>Reference:</h2>
+        <h4>
+          ChatGPT, Excel, Tableu, ArcGIS are used in helping generate data
+          analysis code, grammar check and writing improvements.
+        </h4>
+        <p>
+          [1] Multi-Family Zoning Requirement for MBTA Communities
+          https://www.mass.gov/info-details/multi-family-zoning-requirement-for-mbta-communities</p>
+
+          <p>[2] "The Burgess Urban Land Use Model". people.hofstra.edu. Archived
+          from the original on 2011-06-29. Retrieved 2016-09-26. </p>
+          
+          <p>[3] QUICK
+          IMMIGRATION STATISTICS: MASSACHUSETTS
+          https://www.ilctr.org/quick-ma-immigration-statistics/ </p>
+          
+          <p>[4] About
+          Boston
+          https://web.archive.org/web/20100527093243/http://www.cityofboston.gov/visitors/about.asp</p>
+
+          <p>[5] San Francisco Expanding Housing Choice
+          https://www.citystructure.com/blog/san-francisco-expanding-housing-choice
+        </p>
+        <p>[6] Single-family zoning https://en.wikipedia.org/wiki/Single-family_zoning</p>
+        <p> [7] Houses are too expensive. Apartments are too small. Is this a fix? (Washington Post) </p>
+        <p> [8] Exclusionary by Design: An Investigation of Zoning’s Use as a Tool of Race, Class, and Family Exclusion in Boston’s Suburbs, 1920 to Today </p>
+        <p> [9] The illegal city of Somerville https://cityobservatory.org/the-illegal-city-of-somerville/</p>
+        <p> [10] Boston Middle Class https://www.boston.gov/sites/default/files/embed/b/boston2030_chapter_3_bostons_middle_class.pdf</p>
+        <h4>
+          Data Source: 
+        </h4>
+
+          <p>Zoning Atlas: Source: MAPC Referring URL:
+          https://datacommon.mapc.org/browser/datasets/421 
+        <p>
+          Massachusetts
+          Municipal Boundaries(Municipal): Source: MassGIS Referring URL:
+          https://datacommon.mapc.org/browser/datasets/390 
+        </p>
+          <p>
+          MBTA Communities:
+          Referring URL:
+          https://www.mass.gov/files/csv/2023-12/MBTA%20Communities%20Community%20Categories%20and%20Capacity%20Calculations%20for%20web_0.csv
+        </p>
+          <p>
+          Household Income (Block Groups) Year: 2014-2018 Source: American
+          Community Survey (ACS) Referring URL:
+          https://datacommon.mapc.org/browser/datasets/123 
+        </p>
+          <p>
+          General Population
+          and Housing Characteristics (Blocks) Year: 2010 Source: US Census:
+          Decennial Census Referring URL:
+          https://datacommon.mapc.org/browser/datasets/262 
+        </p>
+          <p>
+          Census Boundary Areas
+          Year: 2010 Source: US Census: Decennial Census Referring URL:
+          https://www.mass.gov/info-details/massgis-data-2010-us-census#redistricting-data-(public-law-94-171)-summary-file-
+        </p>
+
+        </p>
+      </section>
+    </main>
+	In this visualization, I want to show the dramatic change of US population under the dramatic events happened during the 20 century. With the provided population change with 100 years of gap, I was curious about their middle stage, what causes the changes of the population and what reasons are deeply rooted with the time.
+
+	However, seldom people can live more than 100 years old, meaning these two groups of people has few direct connection. To answer my question, we have to introduce two additional data: 
+	- the middle state : the population in 1950s 
+	- the death statistics to tell us
+
+	I manually cleaned and integrated two additional data to the given data, 
+
+
+
 </body>
 </html>
