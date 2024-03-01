@@ -92,10 +92,14 @@
 			<h4>
 				Design Rationale for Sketch 2:
 			</h4>
-			
+
 			<ul>
 				<li>Instead of directly showing the data as a statistical result, this sketch aims to use narrative cartoons to show the changes in people's lifestyles and living environments through depictable figures: the change in dwelling styles, the break of gender discrimination, the adaptation of car transportation, and the rise of high-density cities. These changes indirectly reflect the actual amount of data but directly answer the question we proposed for this visualization.</li>
-				<li>The cartoonized, story-based approach makes it easier for the audience to accept and become interested in reading in detail. The success of this style requires multiple layers of storytelling and uses a lot of detail on different scales. Once successful, it will maximize the expansion of the audience and spread the ideas more intuitively and broadly.</li>
+				<li>The cartoonized, story-based approach makes it easier for the audience to accept and become interested in reading in detail. The success of this style requires multiple layers of storytelling and uses a lot of detail on different scales. Once successful, it will maximize the expansion of the audience and spread the ideas more intuitively and broadly.
+					
+				<img src="./images/sketch_2_reference.jpg" alt="reference" class="image-s"/>
+				<figcaption class="center-text">Reference</figcaption>
+				</li>
 				<li>The drawback of this approach is that the cartoon format makes precise data difficult to read. It's more like a painting than a display of data. This kind of bias might lead the audience to overlook the associated data's accuracy. However, we can mitigate this issue through design, such as limiting the freedom of expression and incorporating chart-like elements into the overall image.</li>
 				<li>Charts may further be considered as a combination of multiple charts, which may exceed the scope of the assignment requirements.</li>
 			</ul>
@@ -110,7 +114,13 @@
 			<h4>
 				Design Rationale for Sketch 3:
 			</h4>
-			  
+
+			<p>Inspiration: Galton Board</p>
+			<img src="images/galton_board.jpg" alt="galton board" class="image-s"  />
+
+			<p>
+				Galton Board, used to demonstrate binomial distribution in probability theory, shows a dynamic process of randomness. Inspired by this process, I have transformed this experience into a synesthetic form of data visualization. This approach is aimed at articulating the inherent randomness present in the fluctuations of population over the centuries.
+			  </p>
 			  <ul>
 				<li>Gamified visualization: this sketch represents the flow of population as an arcade game in three stages. Compared to directly expressing data with bars, this design uses metaphorical techniques, expressing the randomness of history and the unpredictable, often ironic outcomes of human lives through the form of a pinball machine, making the process more interesting to the audience.</li>
 				<li>Compared to the previous image, this visualization design is more abstract and may require more time to fully understand its meaning. However, this also stimulates the audience's interest in actively exploring it. Different baskets represent different historical events, which are related to the explanations on either side of the image, enriching the layers of information.</li>
@@ -131,7 +141,7 @@
 			<h2>Phase Two: Final Design</h2>
 		
 			<figure>
-				<img src="final.png" alt="Final Design" class="image-l" />
+				<img src="./images/final.png" alt="Final Design" class="image-l" />
 				<figcaption>
 					The 20th Century Pinball Machine: a Visualization for Dramatic Events on Population Change
 				</figcaption>
@@ -140,18 +150,19 @@
 		
 		<section>
 			<h2>Design Process & Design Decisions</h2>
-		
+
+
 			<h3>Refine and reasoning the problem from the dataset</h3>
 		
 			<figure>
-				<img src="images/intermediate2.png" alt="Intermediate Plot 2" class="image-s" />
+				<img src="./images/intermediate2.png" alt="Intermediate Plot 2" class="image-s" />
 				<figcaption>
 					Intermediate Plot 2: Baby Boom
 				</figcaption>
 			</figure>
 		
 			<figure>
-				<img src="images/intermediate3.png" alt="Intermediate Plot 3" class="image-s" />
+				<img src="./images/intermediate3.png" alt="Intermediate Plot 3" class="image-s" />
 				<figcaption>
 					Intermediate Plot 3: Fertility Rate
 				</figcaption>
@@ -162,7 +173,7 @@
 			</p>
 		
 			<figure>
-				<img src="images/intermediate4.png" alt="Intermediate Plot 4" class="image-l" />
+				<img src="./images/intermediate4.png" alt="Intermediate Plot 4" class="image-l" />
 				<figcaption>
 					Intermediate Plot 4: Mortality Rate
 				</figcaption>
@@ -175,27 +186,35 @@
 			<h3>Exploratory plottings to find the proper proportion of visualization</h3>
 		
 			<figure>
-				<img src="images/intermediate1.png" alt="Intermediate Plot 1" class="image-l" />
+				<img src="./images/intermediate1.png" alt="Intermediate Plot 1" class="image-l" />
 				<figcaption>
 					Intermediate Plot: Population by age group
 				</figcaption>
 			</figure>
+				
+			<figure>
+				<img src="./images/intermediate5.png" alt="Intermediate Drawing 1" class="image-l" />
+				<figcaption>
+					Intermediate Drawing 5: Population change by age groups
+				</figcaption>
+			</figure>
 		
 			<h3>Layout and color design</h3>
+
+			<p>Following the principle of minimalist and increase the data-ink ratio, I choose limited color palatte with contrast hue: </p>
+			<li>
+				Orange and blue dots represent female/male population count unit, with each dot equivalent to 500,000 females. In this way, we don't need y axis as scale.
+			</li>
+			<li>
+				Dark gray dots indicate deaths, with each dot representing 10,000 deaths. While light gray dots represent estimated deaths,
+			</li>
+
+			<p>To indicate population flow, I draw shade on the background, follow a 50-year interval. For example, the population that is 0 at 1900 will be 50 at 1950, and the curvy background will guide the reader towards the corresponding data point. </p>
+
+			<p>Historical events such as wars and the baby boom are noted on the left side along with the timestamps, they also correspond to the "population catcher" inside the Galton board to represent partial of the population is dead due to such event.</p>
+
+
 		
-			<figure>
-				<img src="images/intermediate5.png" alt="Intermediate Drawing 1" class="image-l" />
-				<figcaption>
-					Intermediate Drawing 1
-				</figcaption>
-			</figure>
-		
-			<figure>
-				<img src="images/intermediate6.png" alt="Intermediate Drawing 2" class="image-l" />
-				<figcaption>
-					Intermediate Drawing 2
-				</figcaption>
-			</figure>
 		</section>
 
       <h3>Reflection</h3>
@@ -217,9 +236,14 @@
         <h3>Data Processing</h3>
 
         <a
-          href= "" 
+          href= "https://docs.google.com/spreadsheets/d/1D4yf1GZH5VtyAmubVgsR74DadjBrosFa/edit?usp=sharing&ouid=112440460323800138384&rtpof=true&sd=true" 
           >Processed Data File</a
         >
+
+		<a
+		href= "https://www.figma.com/file/UpVLMPpcmeg9qqtTGhJn3p/6C35_Assignment2?type=design&node-id=0%3A1&mode=design&t=hMBCZNjcNvdLvtak-1" 
+		>Figma Link</a
+	  >
 
         <h4>Add 1950 Population Data</h4>
 		<img src="images/data1.png" alt="Data processing 1" class="image-l"  />
@@ -273,7 +297,22 @@
         <p>[1] Baby Boom https://en.wikipedia.org/wiki/Baby_boom</p>
 		<p>[2] MORTALITY IN THE UNITED STATES: PAST, PRESENT, AND FUTURE
  			https://budgetmodel.wharton.upenn.edu/issues/2016/1/25/mortality-in-the-united-states-past-present-and-future#:~:text=In%201900%2C%20one%20in%2040,of%20more%20than%20two%20thirds.</p>
+		<p>[3] History of United States https://en.wikipedia.org/wiki/History_of_the_United_States</p>
 
+		<p>[4] US Historical Events from 1900 to Present https://www.baylorschool.org/uploaded/Library_Resources_PDFs/US_History_US_Historical_Events_from_1900_to_Present.pdf</p>
+
+		<p>[5] Banking crises and mortality during the Great Depression: evidence from US urban populations, 1929–1937 https://jech.bmj.com/content/66/5/410</p>
+
+		<p>[6] Causes of death in the United States over the 20th century https://ourworldindata.org/grapher/twentieth-century-of-deaths-us
+		</p>
+
+		<p> [7] Death rates from different causes in the United States over the 20th century https://ourworldindata.org/grapher/death-rates-through-the-20th-century</p>
+
+		<p>[8] Spanish_flu https://en.wikipedia.org/wiki/Spanish_flu#Sex_differences_in_mortality</p>
+
+		<p> [9] Gulf War US Death: https://dcas.dmdc.osd.mil/dcas/app/conflictCasualties/gulf/stormsum </p>
+
+		<p> [10] United States military casualties of war: https://en.wikipedia.org/wiki/United_States_military_casualties_of_war </p>
 
         <h4>
         Data Source: 
