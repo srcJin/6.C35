@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="./report_refined.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Design
+		</h1>
+
+		<p>
+			<strong>Jin Gao</strong> - <em>gaojin@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Phase One: Sketching Visualizations</h2>
+
+			<h3> Design-Research Question: </h3>
+			<h3> Generational Echoes: Tracing the Dynamics of Birth and Mortality in America, 1900-2000 </h3>
+			
+			<h4>Introduction</h4>
+			<p>
+			The 20th century was a period of profound transformation for the United States, marked by significant population growth influenced by both internal developments and global events. The provided dataset offers the starting and ending points. However, history is continuous. Can we use visualization to express this process?
+			</p>
+			
+			<p>
+			In this visualization, I aim to show the dramatic changes in the US population due to the impacts of major events that occurred during the 20th century. With the provided data showing population change over a 100-year gap, I was curious about the intermediate stages, what caused the changes in population, and what reasons are deeply rooted in time.
+			</p>
+			
+			<p>
+			However, seldom do people live more than 100 years, meaning these two groups of people have few direct connections. To answer my question, we have to introduce two additional pieces of data:
+			</p>
+			
+			<ul>
+			<li>The middle state: the population state in the 1950s</li>
+			<li>The mortality statistics: providing mortality information with reasons for death</li>
+			</ul>
+			
+			<h3>The 1900s</h3>
+			<p>
+			The 1900s marked the beginning of the United States's unprecedented changes. Transitioning from a primarily agrarian society to an industrial powerhouse, and the invention of automobility, triggered significant urbanization and industrialization. It marked the beginning of the Progressive Movement. Citizens started to become aware of the social problems of poverty, labor rights, and women's suffrage, which triggered significant strikes and the rise of labor unions.
+			</p>
+			
+			<h3>The 1950s</h3>
+			<p>
+			The 1950s served as a pivotal point for our visualization. Marked by the aftermath of World War II, the beginning of the Cold War, and significant social and economic transformations, this era experienced the baby boom, rapid urbanization, and migration patterns that significantly influenced the growth and distribution of the United States' population.
+			</p>
+			
+			<h3>The 2000s</h3>
+			<p>
+			The end of the 20th century, also the beginning of the 21st century, was marked by profound technological advancements, globalization, and significant social changes that continued to reshape the population landscape of the United States. This era shows the maturation of the baby boom generation and the advanced medical achievements that significantly lowered the death rate.
+			</p>
+			
+			<p>
+			I manually cleaned and integrated two additional data sets into the given dataset. The data processing process is recorded as an appendix in the last section of this assignment.
+			</p>
+		
+			<figure>
+				<img src="./images/sketch1.png" alt="sketch 1" class="image-l" />
+				<figcaption>
+					Sketch 1: A modified Sankey diagram to represent the population flow
+				</figcaption>
+			</figure>
+			
+			<h4>
+				Design Rationale for Sketch 1:
+			</h4>
+			
+			<ul>
+				<li>Express Relationships: Using the style of Sankey diagrams, this sketch aims to show the three interconnected generations of the population and their relationships, in a simplified way.
+			
+					<img src="./images/sankey_reference.jpg" alt="sankey_reference" class="image-s"/>
+					<figcaption class="center-text">Sankey Reference</figcaption>
+				</li>
+				<li>Efficiency and simplicity: It is effective at depicting the flow of populations or resources between different states or groups. The division between the age groups is clear.</li>
+				<li>High Adaptability: The efficient layout offers plenty of room to mark key historical events, explanations. It's also effective to accommodate additional data for future changes.  </li>
+			</ul>
+			
+			<figure>
+				<img src="./images/sketch2.png" alt="sketch 2" class="image-l" />
+				<figcaption>
+				  Sketch 2: A manga to show the dramatic path from the 1900s to the 2000s.
+				</figcaption>
+			</figure>
+			
+			<h4>
+				Design Rationale for Sketch 2:
+			</h4>
+
+			<ul>
+				<li>Instead of directly showing the data as a statistical result, this sketch aims to use narrative cartoons to show the changes in people's lifestyles and living environments through depictable figures: the change in dwelling styles, the break of gender discrimination, the adaptation of car transportation, and the rise of high-density cities. These changes indirectly reflect the actual amount of data but directly answer the question we proposed for this visualization.</li>
+				<li>The cartoonized, story-based approach makes it easier for the audience to accept and become interested in reading in detail. The success of this style requires multiple layers of storytelling and uses a lot of detail on different scales. Once successful, it will maximize the expansion of the audience and spread the ideas more intuitively and broadly.
+					
+				<img src="./images/sketch_2_reference.jpg" alt="reference" class="image-s"/>
+				<figcaption class="center-text">Reference</figcaption>
+				</li>
+				<li>The drawback of this approach is that the cartoon format makes precise data difficult to read. It's more like a painting than a display of data. This kind of bias might lead the audience to overlook the associated data's accuracy. However, we can mitigate this issue through design, such as limiting the freedom of expression and incorporating chart-like elements into the overall image.</li>
+				<li>Charts may further be considered as a combination of multiple charts, which may exceed the scope of the assignment requirements.</li>
+			</ul>
+			
+			<figure>
+				<img src="./images/sketch3.png" alt="sketch 3" class="image-l" />
+				<figcaption>
+				  Sketch 3: The 20th Century Pinball Machine: a dynamic visualization for dramatic events on population change
+				</figcaption>
+			</figure>
+			  
+			<h4>
+				Design Rationale for Sketch 3:
+			</h4>
+
+			<p>Inspiration: Galton Board</p>
+			<img src="images/galton_board.jpg" alt="galton board" class="image-s"  />
+
+			<p>
+				Galton Board, used to demonstrate binomial distribution in probability theory, shows a dynamic process of randomness. Inspired by this process, I have transformed this experience into a synesthetic form of data visualization. This approach is aimed at articulating the inherent randomness present in the fluctuations of population over the centuries.
+			  </p>
+			  <ul>
+				<li>Gamified visualization: this sketch represents the flow of population as an arcade game in three stages. Compared to directly expressing data with bars, this design uses metaphorical techniques, expressing the randomness of history and the unpredictable, often ironic outcomes of human lives through the form of a pinball machine, making the process more interesting to the audience.</li>
+				<li>Compared to the previous image, this visualization design is more abstract and may require more time to fully understand its meaning. However, this also stimulates the audience's interest in actively exploring it. Different baskets represent different historical events, which are related to the explanations on either side of the image, enriching the layers of information.</li>
+				<li>The downside of this design is the inevitably lengthy proportions, making it difficult to display fully on widescreen and small screens, or making the text too small.</li>
+				<li>This design offers the possibility of dynamic presentation. We can completely turn it into a web-based game, writing some collision and gravity physics rules to drive the movement of these balls, ultimately displaying a dynamically changing process of American population change throughout the 20th century.</li>
+			  </ul>
+			  
+			  <h3>Reflection</h3>
+			  
+			  <p>
+				In the sketch assignment, I strived to find an interesting and innovative way to visualize population statistics and their related historical events. From abstract (Sketch 1), to concrete (Sketch 2), to a gamified semi-abstract (Sketch 3), I tried three ways of visualizing the historical process over the past century. In my opinion, they do not have a superiority or inferiority; it's just necessary to determine our evaluation criteria based on the target audience. In the Final Design below, I chose Sketch 3 as the object for further development. First, through a certain level of abstraction, this visualization method achieves a balance between workload, expression accuracy, and fun. Second, it prepares for future dynamic visualization or gamified visualization phases, allowing for animation without changing the original design. Finally, I believe it has strong extensibility; beyond the 1900, 1950, 2000 nodes, we can add more years to the original design, like adding more levels to a game, making the visualization more interesting.
+			  </p>
+			  
+
+		</section>
+
+		<section>
+			<h2>Phase Two: Final Design</h2>
+		
+			<figure>
+				<img src="./images/final.png" alt="Final Design" class="image-l" />
+				<figcaption>
+					The 20th Century Pinball Machine: a Visualization for Dramatic Events on Population Change
+				</figcaption>
+			</figure>
+		</section>
+		
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+
+			<h3>Refine and reasoning the problem from the dataset</h3>
+		
+			<figure>
+				<img src="./images/intermediate2.png" alt="Intermediate Plot 2" class="image-s" />
+				<figcaption>
+					Intermediate Plot 2: Baby Boom
+				</figcaption>
+			</figure>
+		
+			<figure>
+				<img src="./images/intermediate3.png" alt="Intermediate Plot 3" class="image-s" />
+				<figcaption>
+					Intermediate Plot 3: Fertility Rate
+				</figcaption>
+			</figure>
+		
+			<p>
+				The After War baby boom: The end of World War II in 1945 brought a sense of relief and optimism to the U.S. population. The economy was booming, and there was a widespread belief in the possibility of a prosperous future for the next generation. So many families gave birth to their children, which leads to an excessive high birth rate.
+			</p>
+		
+			<figure>
+				<img src="./images/intermediate4.png" alt="Intermediate Plot 4" class="image-l" />
+				<figcaption>
+					Intermediate Plot 4: Mortality Rate
+				</figcaption>
+			</figure>
+		
+			<p>
+				We see an unstable mortality rate during the war period (1910 to 1940). This includes World War I (1914-1918), the Great Depression (1929), and World War II (1939-1945). All of these lead to dramatic population structure changes around 1950.
+			</p>
+		
+			<h3>Exploratory plottings to find the proper proportion of visualization</h3>
+		
+			<figure>
+				<img src="./images/intermediate1.png" alt="Intermediate Plot 1" class="image-l" />
+				<figcaption>
+					Intermediate Plot: Population by age group
+				</figcaption>
+			</figure>
+				
+			<figure>
+				<img src="./images/intermediate5.png" alt="Intermediate Drawing 1" class="image-l" />
+				<figcaption>
+					Intermediate Drawing 5: Population change by age groups
+				</figcaption>
+			</figure>
+		
+			<h3>Layout and color design</h3>
+
+			<p>Following the principle of minimalist and increase the data-ink ratio, I choose limited color palatte with contrast hue: </p>
+			<li>
+				Orange and blue dots represent female/male population count unit, with each dot equivalent to 500,000 females. In this way, we don't need y axis as scale.
+			</li>
+			<li>
+				Dark gray dots indicate deaths, with each dot representing 10,000 deaths. While light gray dots represent estimated deaths,
+			</li>
+
+			<p>To indicate population flow, I draw shade on the background, follow a 50-year interval. For example, the population that is 0 at 1900 will be 50 at 1950, and the curvy background will guide the reader towards the corresponding data point. </p>
+
+			<p>Historical events such as wars and the baby boom are noted on the left side along with the timestamps, they also correspond to the "population catcher" inside the Galton board to represent partial of the population is dead due to such event.</p>
+
+
+		
+		</section>
+
+      <h3>Reflection</h3>
+
+	  <!-- Your writeup should also include a final paragraph reflecting on how phase one may or may not have influenced your design for this assignment. For example, you could discuss to what extent sketching helped inform your final design. What aspects of your sketches did you keep or discard, and why did you make those decisions? Or, how did your sketches help you change course? -->
+
+      <p> In this assignment, I spent a lot of time trying various sketches. In addition to the three listed above, I also tried many ordinary or unrealistic ideas during the process. Sketch greatly stimulated my thinking and made me think out of the box and look for more possibilities beyond the established default chart styles. During the implementation process, I also encountered many difficulties. For example, in order to pursue customization, the use of illustrator drawing resulted in a heavy workload, and the original data had too many age groups, which forced the data to be processed twice. The attempt of sketching allowed me to predict these difficulties in advance and to be able to cope with these troubles with sufficient psychological anticipation after encountering them during the implementation process. At the same time, sketches also provide me with a means to evaluate workload and work progress, allowing me to reasonably arrange time to complete this assignment.
+		      </p>
+		</section>
+	</main>
+
+<main>
+
+
+
+<section>
+	<h2>Appendix</h2>
+
+        <h3>Data Processing</h3>
+
+        <a
+          href= "https://docs.google.com/spreadsheets/d/1D4yf1GZH5VtyAmubVgsR74DadjBrosFa/edit?usp=sharing&ouid=112440460323800138384&rtpof=true&sd=true" 
+          >Processed Data File</a
+        >
+
+		<a
+		href= "https://www.figma.com/file/UpVLMPpcmeg9qqtTGhJn3p/6C35_Assignment2?type=design&node-id=0%3A1&mode=design&t=hMBCZNjcNvdLvtak-1" 
+		>Figma Link</a
+	  >
+
+        <h4>Add 1950 Population Data</h4>
+		<img src="images/data1.png" alt="Data processing 1" class="image-l"  />
+		<p>R code:</p>
+		<pre><code>library('ipumsr')
+	library(dplyr)
+	library(tidyr)
+	
+	ddi <- read_ipums_ddi("usa_00003.xml")
+	data <- read_ipums_micro(ddi)
+	
+	# Transform the data
+	data_processed <- data %>%
+	  # Assuming 'SEX', 'YEAR', and 'AGE' are the names in the dataset
+	  # Convert variables if necessary, for example, from codes to meaningful labels if required
+	  mutate(SEX = as.factor(SEX), YEAR = as.factor(YEAR)) %>%
+	  # Group by Sex, Year, and Age to count the number of people in each group
+	  count(SEX, YEAR, AGE) %>%
+	  # Rename columns to match your desired output
+	  rename(Sex = SEX, Year = YEAR, Age = AGE, People = n)
+	
+	# View the processed data
+	print(data_processed)
+	
+	# Create age groups and count the number of people
+	data_grouped <- data_processed %>%
+	  mutate(AgeGroup = cut(Age,
+							breaks = c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 69, 74, 79, 84, 89, Inf),
+							labels = c("0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90"),
+							right = FALSE)) %>%
+	  group_by(Sex, Year, AgeGroup) %>%
+	  summarise(People = sum(People), .groups = 'drop')
+	
+	# View the first few rows of the grouped data
+	head(data_grouped)
+	
+	data_grouped <- data_grouped %>%
+	  mutate(People_Scaled = round((People * 100) / 50000) * 50000 / 1000)
+	head(data_grouped)
+	
+	write.csv(data_grouped, "data_grouped.csv", row.names = FALSE)</code></pre>
+
+      </section>
+
+      <section>
+        <h2>Reference:</h2>
+        <h4>
+        ChatGPT, Excel, Tableu, ArcGIS are used in intermediate plot generation, helping generate data
+        analysis code, grammar check and writing improvements.
+        </h4>
+        <p>[1] Baby Boom https://en.wikipedia.org/wiki/Baby_boom</p>
+		<p>[2] MORTALITY IN THE UNITED STATES: PAST, PRESENT, AND FUTURE
+ 			https://budgetmodel.wharton.upenn.edu/issues/2016/1/25/mortality-in-the-united-states-past-present-and-future#:~:text=In%201900%2C%20one%20in%2040,of%20more%20than%20two%20thirds.</p>
+		<p>[3] History of United States https://en.wikipedia.org/wiki/History_of_the_United_States</p>
+
+		<p>[4] US Historical Events from 1900 to Present https://www.baylorschool.org/uploaded/Library_Resources_PDFs/US_History_US_Historical_Events_from_1900_to_Present.pdf</p>
+
+		<p>[5] Banking crises and mortality during the Great Depression: evidence from US urban populations, 1929–1937 https://jech.bmj.com/content/66/5/410</p>
+
+		<p>[6] Causes of death in the United States over the 20th century https://ourworldindata.org/grapher/twentieth-century-of-deaths-us
+		</p>
+
+		<p> [7] Death rates from different causes in the United States over the 20th century https://ourworldindata.org/grapher/death-rates-through-the-20th-century</p>
+
+		<p>[8] Spanish_flu https://en.wikipedia.org/wiki/Spanish_flu#Sex_differences_in_mortality</p>
+
+		<p> [9] Gulf War US Death: https://dcas.dmdc.osd.mil/dcas/app/conflictCasualties/gulf/stormsum </p>
+
+		<p> [10] United States military casualties of war: https://en.wikipedia.org/wiki/United_States_military_casualties_of_war </p>
+
+        <h4>
+        Data Source: 
+        </h4>
+
+		<p>[1] 1950 Census Data: U.S. Census Bureau via IPUMS http://ipums.org/ (Same as given dataset)</p>
+
+		<p>[2] Deaths by age: 
+		https://ourworldindata.org/grapher/number-of-deaths-by-age-group</p>
+
+		<p>[3] Unintentional injuries death rate by age group, United States, 2020 https://ourworldindata.org/grapher/unintentional-injuries-death-rate-by-age-group-who-mdb </p>
+		
+		<p>[4] DEATHS FROM SELECTED CAUSES, BY 10‐YEAR GROUPS, https://www.cdc.gov/nchs/data/dvs/hist290a_0039.pdf</p>
+
+      </section>
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="./report_refined.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 4</small>
+			Persuasive or Deceptive Visualization?
+		</h1>
+
+		<p><strong>Jin Gao</strong> — <em>gaojin@mit.edu</em></p>
+	</header>
+
+	<main>
+		<!-- 
+		<h2>Research Question: 警察的违规是集体性的还是个人性的？
+		</h2>
+		<p>
+			Explination: 
+
+			纽约的警察系统是一个庞大的，具有复杂社会关系的人际网络。警察在执法的过程中扮演的并不只是他个人，而是集体性决策的反映。基于给定的数据，我想
+			
+			警察的人际关系和社会网络对于他们的违规是否有相关性?
+			资历越深的警察他们的共同的违规率是否更高？
+			越相邻的辖区，警察之间的社会联系就更强，他们是否有更高的集体违规率？
+
+			我们能否通过Persuasive 和 Deceptive Visualization, 从两个角度去表达冲突的观点，即：
+			纽约警察的违规是集体性的，一些警察的违规是具有连带性质，即一些区域的警察具有较高的违规率，而其他比较“廉洁”的警察集体不倾向于违规。
+			纽约警察的违规是个人性的，他们自身的决定与他们所处的社会并无关系。
+		</p> -->
+
+		<h2>Proposition: Is Police Misconduct Collective or Individual?</h2>
+		<p>
+			<b>The New York police system is a vast interpersonal network with
+				complex social relationships. In the process of law enforcement, the
+				role played by the police is not merely individual but reflects
+				collective decision-making.
+			</b>
+		</p>
+		<p>Based on the given data, I am interested in exploring:</p>
+
+		<ul>
+			<li>
+				Is there a correlation between police interpersonal relationships and
+				social networks and their misconduct?
+			</li>
+			<li>
+				Do more experienced police officers have a higher common rate of
+				misconduct?
+			</li>
+			<li>
+				In neighboring jurisdictions, where police social connections are
+				stronger, is there a higher rate of collective misconduct?
+			</li>
+		</ul>
+		<p>
+			Can we use Persuasive and Deceptive Visualization to express conflicting
+			viewpoints, namely:
+		</p>
+		<ul>
+			<li>
+				New York police misconduct is collective, with some police misconduct
+				being contagious, meaning some areas' police have a higher rate of
+				misconduct, while other "cleaner" police groups are not inclined to
+				misconduct.
+			</li>
+			<li>
+				New York police misconduct is individual, their decisions and the
+				society they are in are unrelated.
+			</li>
+		</ul>
+	</main>
+
+	<main>
+		<h2>Background Information</h2>
+		<p>Intergrated to understand the data</p>
+
+		<figure>
+			<img src="./images/new_york_police_hierarchy.png" alt="The Hierarchy of the New York Police System"
+				class="image-xxl" />
+			<figcaption>The Hierarchy of the New York Police System.</figcaption>
+		</figure>
+		<p>
+			This diagram provides a detailed view of the organizational structure
+			within the NYPD. It is critical for us to understand the hierarchy
+			between officers.
+		</p>
+		<ref>References:
+			<a href="https://glloverov.xyz/product_details/26536766.html">GLLoverov</a>,
+			<a href="https://en.wikipedia.org/wiki/Organization_of_the_New_York_City_Police_Department">Wikipedia -
+				Organization of the NYPD</a>
+		</ref>
+
+		<!-- New York Precincts Mapping -->
+		<figure>
+			<img src="./images/GIS.png" alt="New York Precincts Mapping" class="image-m" />
+			<figcaption>New York Precincts Mapping</figcaption>
+		</figure>
+		<p>
+			Linking geographical data to New York Police Precincts provides an
+			intuitive visualization that relates directly to urban spaces, offering
+			a new layer of insight into the spatial distribution of police
+			activities and complaints.
+		</p>
+		<ref>Reference:
+			<a href="https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz">NYC Open Data - Police
+				Precincts</a>
+		</ref>
+	</main>
+
+	<main>
+		<h2>Exploratory Data Visualization</h2>
+		<p>
+			Here I collected some existing figure and my new figures showing the
+			general picture of the data
+		</p>
+
+		<figure>
+			<img src="./images/case_study_1.png" alt="Case Study 1: Analysis of Complaints in Major US Cities"
+				class="image-s" />
+			<figcaption>
+				<strong>Case Study 1:</strong> Analysis of Complaints in Major US
+				Cities. This case study highlights that a small share of US police
+				officers are responsible for a third of complaints in large cities.
+			</figcaption>
+		</figure>
+		<p>
+			This detailed analysis reveals significant disparities in police conduct
+			across major urban areas, prompting discussions on accountability and
+			reform.
+		</p>
+		<ref>Reference:
+			<a
+				href="https://www.reddit.com/r/dataisbeautiful/comments/hyiot3/oc_nypd_complaint_records_source_propublica/">Reddit
+				- DataIsBeautiful</a>
+		</ref>
+
+		<figure>
+			<img src="./images/case_study_2.jpg" alt="Case Study 2: Average Time an NYPD Complaint Remains Open"
+				class="image-s" />
+			<figcaption>
+				<strong>Case Study 2:</strong> Average Time an NYPD Complaint Remains
+				Open. This visualization offers insights into the resolution timeline
+				for complaints filed against NYPD officers.
+			</figcaption>
+		</figure>
+		<p>
+			The study provides a critical examination of the procedural delays in
+			addressing complaints, highlighting areas for improvement in police
+			accountability mechanisms.
+		</p>
+		<ref>Reference:
+			<a
+				href="https://www.reddit.com/r/dataisbeautiful/comments/hyiot3/oc_nypd_complaint_records_source_propublica/">Reddit
+				- DataIsBeautiful</a>
+		</ref>
+
+		<!-- Additional Case Studies (Assuming similar to Case Study 2) -->
+		<figure>
+			<img src="./images/case_study_3.jpg" alt="Further Analysis on NYPD Complaints" class="image-s" />
+			<figcaption>
+				Further examinations reveal consistent patterns in the average time an
+				NYPD complaint remains open, underscoring systemic issues in complaint
+				resolution processes.
+			</figcaption>
+		</figure>
+		<!-- Reference similar to Case Study 2 -->
+	</main>
+
+	<main>
+		<h2>Main Drawings</h2>
+
+		<section>
+			<figure>
+				<img src="IMAGE_FILENAME" alt="" />
+				<figcaption>
+					The Police Misconduct is a Collective Practice Influenced by Their
+					Social Network
+				</figcaption>
+			</figure>
+
+			<h3>Design Decisions and Rationale:</h3>
+
+			<ul>
+				<li>RATIONALE_1</li>
+				<li>RATIONALE_2</li>
+				<li>RATIONALE_3</li>
+			</ul>
+
+			<h3>Data Transformation:</h3>
+
+			<p>[WRITE PARAGRAPHS HERE.]</p>
+		</section>
+
+		<section>
+			<h3>AGAINST the Proposition</h3>
+
+			<figure>
+				<img src="." alt="" class="image-l"/>
+				<figcaption>
+					The Police Misconduct is an Individual Practice, NOT a Systematic
+					Problem
+				</figcaption>
+			</figure>
+
+			<h3>Design Decisions and Rationale:</h3>
+
+			<ul>
+				<li>RATIONALE_1</li>
+				<li>RATIONALE_2</li>
+				<li>RATIONALE_3</li>
+			</ul>
+
+			<h3>Data Transformation:</h3>
+
+
+			<figure>
+				<img src="./images/processing1.png" alt="" class="image-l"/>
+				<figcaption>
+					Step1: extract core data related to social network and police's information
+				</figcaption>
+			</figure>
+			<p>1. Retain unique_mos_id for further data linkage (vlookup) usage</p>
+			<p>2. Transform each person's case into one line, with catagories </p>
+			<p> We found that the fedo_type has four catagories : Abuse of Authority, Discourtesy, Offensive Language, Force. We can pivot the data into one line as an attribute of the person.
+				</p>
+			<code>
+
+				import pandas as pd
+
+				# Load the uploaded CSV file
+				file_path = "process1.csv"
+				data = pd.read_csv(file_path)
+
+				fado_types = ["Abuse of Authority", "Discourtesy", "Offensive Language", "Force"]
+
+
+				# Calculate the most common precinct and rank_incident for each Full Name
+				data["precinct"] = data.groupby("full_name")["precinct"].transform(
+					lambda x: x.mode()[0]
+				)
+				data["rank_incident"] = data.groupby("full_name")["rank_incident"].transform(
+					lambda x: x.mode()[0]
+				)
+				data["shield_no"] = data.groupby("full_name")["shield_no"].transform(
+					lambda x: x.mode()[0]
+				)
+
+				# Now we'll pivot the data again with this simplification
+				simplified_data = pd.DataFrame()
+
+				for name, group in data.groupby("full_name"):
+					record = {
+						"full_name": name,
+						"shield_no": group["shield_no"].iloc[0],  # Most common precinct
+						"precinct": group["precinct"].iloc[0],  # Most common precinct
+						"rank_incident": group["rank_incident"].iloc[0],  # Most common rank_incident
+						"mos_age_list": group["mos_age_incident"].unique().tolist(),
+					}
+
+					# For each fado type, compile IDs and counts
+					for fado_type in fado_types:
+						fado_group = group[group["fado_type"] == fado_type]
+						record[f"{fado_type}_ids"] = fado_group["unique_mos_id"].tolist()
+						record[f"{fado_type}_count"] = len(fado_group)
+
+					record_df = pd.DataFrame([record])
+
+					simplified_data = pd.concat([simplified_data, record_df], ignore_index=True)
+
+				# Rename columns to match the requested format more closely
+				simplified_data.columns = simplified_data.columns.str.replace(" ", "_").str.replace(
+					"of_Authority", "of_Authority"
+				)
+
+				# Save the simplified DataFrame to a new CSV file
+				output_file_path_simplified = "pivoted_data.csv"
+				simplified_data.to_csv(output_file_path_simplified, index=False)
+
+				output_file_path_simplified
+
+			</code>
+
+			<figure>
+				<img src="./images/processing2.png" alt="" class="image-l"/>
+				<figcaption>
+					Step1 Result: pivoted data 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="./images/processing3.png" alt="" class="image-l"/>
+				<figcaption>
+					Step2: ranking and grouping accoring to its precient number and rank_indicent. 
+				</figcaption>
+			</figure>
+			<p>After removing zero data, we get a cleaner table with police officer's name, their beloning precient, their rank and their total abuse count. </p>
+
+			<figure>
+				<img src="./images/processing4.png" alt="" class="image-l"/>
+				<figcaption>
+					Step3: Calculating the social network according to d3.js's input data structure</figcaption>
+			</figure>
+			<p>Now we have a cleaned data with the key information we want. We need to predict their social network using their rank and precinct </p>
+			<p>According to the background knowledge mentioned at the beginning, the rank of the police officers is: </p>
+
+
+			<h4>NYPD Ranks, Roles, Descriptions, and Connections</h4>
+			<ol>
+				<li>Inspector
+					<p>Senior management position in charge of borough commands or specialized divisions.</p>
+					<ul>
+						<li>Connections:
+							<ul>
+								<li class="connection">Deputy Inspector - Weight: 5</li>
+								<li class="connection">Captain - Weight: 4</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Deputy Inspector
+					<p>Oversees larger units or precincts, handling a range of administrative and operational tasks.</p>
+					<ul>
+						<li>Connections:
+							<ul>
+								<li class="connection">Inspector - Weight: 5</li>
+								<li class="connection">Captain - Weight: 4</li>
+								<li class="connection">Lieutenant - Weight: 3</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Captain
+					<p>In charge of precincts or specialized units, playing a key role in decision-making and police activities coordination.</p>
+					<ul>
+						<li>Connections:
+							<ul>
+								<li class="connection">Deputy Inspector - Weight: 4</li>
+								<li class="connection">Lieutenant - Weight: 3</li>
+								<li class="connection">Sergeant - Weight: 2</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Lieutenant
+					<p>Manages specific units or sections of a precinct, supervising Sergeants and their subordinate officers and detectives.</p>
+					<ul>
+						<li>Connections:
+							<ul>
+								<li class="connection">Captain - Weight: 3</li>
+								<li class="connection">Sergeant - Weight: 4</li>
+								<li class="connection">Detective - Weight: 2</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Sergeant
+					<p>The first line of supervisory authority, overseeing Police Officers and Detectives, ensuring adherence to policies.</p>
+					<ul>
+						<li>Connections:
+							<ul>
+								<li class="connection">Lieutenant - Weight: 4</li>
+								<li class="connection">Detective - Weight: 3</li>
+								<li class="connection">Police Officer - Weight: 5</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Detective
+					<p>Specializes in investigation, promoted based on skills, works closely with Police Officers, and reports to Sergeants or Lieutenants.</p>
+					<ul>
+						<li>Connections:
+							<ul>
+								<li class="connection">Sergeant - Weight: 3</li>
+								<li class="connection">Police Officer - Weight: 2</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Police Officer
+					<p>Entry-level position, performing duties as assigned by higher ranks, often forms the core of NYPD's street presence.</p>
+					<ul>
+						<li>Connections:
+							<ul>
+								<li class="connection">Sergeant - Weight: 5</li>
+								<li class="connection">Detective - Weight: 2</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ol>
+		
+		</section>
+
+		<section>
+			<h2>Final Reflection</h2>
+
+			<p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+			<p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+			<p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+		</section>
+	</main>
+</body>
+
+</html>
