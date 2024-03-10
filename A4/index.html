@@ -2,8 +2,15 @@
 <html lang="en">
 
 <head>
-	<title>Vis & Society Assignment 3</title>
+	<title>Vis & Society Assignment 4</title>
 	<link rel="stylesheet" href="./report_refined.css" />
+	<script src="
+	https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js
+	"></script>
+	<link href="
+	https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css
+	" rel="stylesheet">
+
 </head>
 
 <body>
@@ -173,64 +180,90 @@
 	</main>
 
 	<main>
-		<h2>Main Drawings</h2>
+		<h2>Persuasive Drawings</h2>
 
 		<section>
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="./images/persuasive.png" alt="" />
 				<figcaption>
-					The Police Misconduct is a Collective Practice Influenced by Their
-					Social Network
+					The Police Misconduct is a Collective Practice Influenced by Their Surroundings : a Drawing
+					Highlighting Dinstive Precinct Social Networks
 				</figcaption>
 			</figure>
+
+			<a href="./test.html">Click here for the animated version</a>
 
 			<h3>Design Decisions and Rationale:</h3>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>Disjointed force charts can effectively depict complex networks with numerous nodes and connections,
+					which is suitable for representing the intricate relationships within a police department. It allows
+					the viewer to see how cases are distributed across different precincts without becoming overwhelmed
+					by the details of each connection.</li>
+				<li>Visualization of Collective Behavior: By clustering cases around precincts, the design underscores
+					the concept that misconduct is not an isolated incident but a collective behavior that can be
+					influenced by an officer's immediate environment and culture within their precinct.</li>
+				<li>Highliggting of Problematic Precincts: Circles with a distinctive outline could signify precincts
+					with a higher number of cases, thus drawing attention to potential hotspots of misconduct and
+					suggesting a need for targeted reforms or interventions.</li>
 			</ul>
 
-			<h3>Data Transformation:</h3>
 
-			<p>[WRITE PARAGRAPHS HERE.]</p>
 		</section>
 
 		<section>
-			<h3>AGAINST the Proposition</h3>
+			<h3>Deceptive Drawing</h3>
 
 			<figure>
-				<img src="." alt="" class="image-l"/>
+				<img src="./images/deceptive.png" alt="" class="image-l" />
 				<figcaption>
-					The Police Misconduct is an Individual Practice, NOT a Systematic
-					Problem
+					The Police Misconduct is an Individual Practice Across New York, it's not directly influenced by
+					policeman's work social networks in particular precincts
 				</figcaption>
 			</figure>
 
 			<h3>Design Decisions and Rationale:</h3>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
-			</ul>
+				<li>Deceptive Positions: In this deceptive chart, I intentionally used a combination of maps and dots to
+					show that the geographic locations of the misconduct officers are widely separated. This changes the
+					scale from a focus on the social network of a particular police station, as in the previous chart,
+					to the larger scale of the entire city. The audience will easily notice that each precinct has some
+					misconduct behavior, and the distribution is relatively even.</li>
+				<li>Deceptive Color Scale: The color scale of this chart has been intentionally adjusted to shades of
+					light and dark red that are difficult to distinguish, and the numerical changes have little effect
+					on the color. This treatment blurs the range of variation in misconduct behavior, leading people to
+					easily conclude that "every precinct has misconduct," so this may not be related to the social
+					atmosphere of a few specific precincts.</li>
+				<li>Deceptive Average Numbers: The depth of color shown here is derived from the averaged Total Abuse
+					Count. This treatment diminishes some extreme values, making it not easy to notice precincts with
+					very high collective misconduct numbers. Such processing leads people to mistakenly believe that the
+					responsibility for misconduct does not lie with the police department, but is widespread in every
+					corner of New York City, and the frequency of occurrence is about the same. This cleverly shifts the
+					blame from the police group itself to the citizens of New York and the complainants distributed
+					everywhere.</li>
 
+				<!-- <li>Deceptive Positions: 在这张欺骗性的图示中，我故意采用了地图+圆点的方式表达misconduct警官们地理位置的区隔很远。这样，我们实际上从上一张图聚焦于某个警察局的社会网络这样的小尺度，一下转变为整个城市的大尺度。观众容易注意到每个precincts都有一些misconduct行为，并且分布相对均匀。/li>
+				<li>Deceptive Color Scale: 这张图的color scale被故意调整为不容易区分的浅红和深红，并且数字变化对颜色的影响较小。这样的处理模糊了misconduct行为的变化区间，让人们容易得到"每个precincts都有misconduct”， 所以这可能与某几个具体的precincts的社会风气没有关系。</li>
+				<li>Deceptive Average Numbers: 这里展示的颜色深度来自于average后的Total Abuse Count。这样的处理将一些极端数值弱化，使得某些具有很高集体misconduct number的precincts不被容易察觉。这样的处理让人们误以为misconduct的责任不在警局，而普遍存在在纽约市的各个角落，并且发生频率差不多。巧妙地将责任从警察群体自身推给纽约市民和分布在各地的举报者。 </li> -->
+			</ul>
+		</section>
+
+		<main>
 			<h3>Data Transformation:</h3>
 
-
 			<figure>
-				<img src="./images/processing1.png" alt="" class="image-l"/>
+				<img src="./images/processing1.png" alt="" class="image-l" />
 				<figcaption>
 					Step1: extract core data related to social network and police's information
 				</figcaption>
 			</figure>
 			<p>1. Retain unique_mos_id for further data linkage (vlookup) usage</p>
 			<p>2. Transform each person's case into one line, with catagories </p>
-			<p> We found that the fedo_type has four catagories : Abuse of Authority, Discourtesy, Offensive Language, Force. We can pivot the data into one line as an attribute of the person.
-				</p>
-			<code>
-
+			<p> We found that the fedo_type has four catagories : Abuse of Authority, Discourtesy, Offensive Language,
+				Force. We can pivot the data into one line as an attribute of the person.
+			</p>
+			<pre><code class="language-python">
 				import pandas as pd
 
 				# Load the uploaded CSV file
@@ -284,127 +317,218 @@
 
 				output_file_path_simplified
 
-			</code>
+			</code></pre>
 
 			<figure>
-				<img src="./images/processing2.png" alt="" class="image-l"/>
+				<img src="./images/processing2.png" alt="" class="image-xl" />
 				<figcaption>
-					Step1 Result: pivoted data 
+					Step1 Result: pivoted data
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="./images/processing3.png" alt="" class="image-l"/>
+				<img src="./images/processing3.png" alt="" class="image-l" />
 				<figcaption>
-					Step2: ranking and grouping accoring to its precient number and rank_indicent. 
+					Step2: ranking and grouping accoring to its precient number and rank_indicent.
 				</figcaption>
 			</figure>
-			<p>After removing zero data, we get a cleaner table with police officer's name, their beloning precient, their rank and their total abuse count. </p>
+			<p>After removing zero data and extreme data(we have an officer withprecinct 1000!), we get a cleaner table
+				with police officer's name, their beloning precient, their rank and their total abuse count. </p>
+
 
 			<figure>
-				<img src="./images/processing4.png" alt="" class="image-l"/>
+				<img src="./images/processing4.png" alt="" class="image-s" />
 				<figcaption>
-					Step3: Calculating the social network according to d3.js's input data structure</figcaption>
+					Step3: Small scale test for disjoint graph visualization</figcaption>
 			</figure>
-			<p>Now we have a cleaned data with the key information we want. We need to predict their social network using their rank and precinct </p>
-			<p>According to the background knowledge mentioned at the beginning, the rank of the police officers is: </p>
+			<p>Adjusted Data Structure for our disjoint forced graph</p>
+			<pre><code class="language-python">
+				nodes: [
+				{
+				  id: "Andrew Puglisi",
+				  radius: 2,
+				  citing_patents_count: 2,
+				  total_abuse_count: 9,
+				  rank_incident: "Sergeant",
+				  precinct: 1
+				},],
+				links: [
+				{
+				  source:
+					"Brian Ilund",
+				  target: "Andrew Wunsch",
+				  value: 2,
+				},]
 
+			</code></pre>
 
-			<h4>NYPD Ranks, Roles, Descriptions, and Connections</h4>
-			<ol>
-				<li>Inspector
-					<p>Senior management position in charge of borough commands or specialized divisions.</p>
-					<ul>
-						<li>Connections:
-							<ul>
-								<li class="connection">Deputy Inspector - Weight: 5</li>
-								<li class="connection">Captain - Weight: 4</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Deputy Inspector
-					<p>Oversees larger units or precincts, handling a range of administrative and operational tasks.</p>
-					<ul>
-						<li>Connections:
-							<ul>
-								<li class="connection">Inspector - Weight: 5</li>
-								<li class="connection">Captain - Weight: 4</li>
-								<li class="connection">Lieutenant - Weight: 3</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Captain
-					<p>In charge of precincts or specialized units, playing a key role in decision-making and police activities coordination.</p>
-					<ul>
-						<li>Connections:
-							<ul>
-								<li class="connection">Deputy Inspector - Weight: 4</li>
-								<li class="connection">Lieutenant - Weight: 3</li>
-								<li class="connection">Sergeant - Weight: 2</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Lieutenant
-					<p>Manages specific units or sections of a precinct, supervising Sergeants and their subordinate officers and detectives.</p>
-					<ul>
-						<li>Connections:
-							<ul>
-								<li class="connection">Captain - Weight: 3</li>
-								<li class="connection">Sergeant - Weight: 4</li>
-								<li class="connection">Detective - Weight: 2</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Sergeant
-					<p>The first line of supervisory authority, overseeing Police Officers and Detectives, ensuring adherence to policies.</p>
-					<ul>
-						<li>Connections:
-							<ul>
-								<li class="connection">Lieutenant - Weight: 4</li>
-								<li class="connection">Detective - Weight: 3</li>
-								<li class="connection">Police Officer - Weight: 5</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Detective
-					<p>Specializes in investigation, promoted based on skills, works closely with Police Officers, and reports to Sergeants or Lieutenants.</p>
-					<ul>
-						<li>Connections:
-							<ul>
-								<li class="connection">Sergeant - Weight: 3</li>
-								<li class="connection">Police Officer - Weight: 2</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Police Officer
-					<p>Entry-level position, performing duties as assigned by higher ranks, often forms the core of NYPD's street presence.</p>
-					<ul>
-						<li>Connections:
-							<ul>
-								<li class="connection">Sergeant - Weight: 5</li>
-								<li class="connection">Detective - Weight: 2</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ol>
-		
-		</section>
+			<figure>
+				<figcaption>
+					Step4: Calculating the social network according to d3.js's input data structure</figcaption>
+			</figure>
+			<p>Now we have a cleaned data with the key information we want. We need to predict their social network
+				using their rank and precinct </p>
+			<p>According to the background knowledge mentioned at the beginning, the rank of the police officers is:
+			</p>
 
-		<section>
-			<h2>Final Reflection</h2>
+			<p>We then write a script to transform the csv file to our desired json format, and create the link using
+				their connection hierarchy</p>
+			<figure>
+				<img src="./images/processing6.png" alt="" class="image-l" />
+				<figcaption>
+					Our first attempt on visualization is ok but not optimal, because we indluded too many unnecessary
+					data and connection. We will then change the logic following a strict hierarchy and remove unnessary
+					data.
+				</figcaption>
+			</figure>
 
-			<p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
-			<p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
-			<p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
-		</section>
-	</main>
+			<pre><code class="language-python">
+				import csv
+				import json
+				
+				# Your connections logic
+				connection_logic = [
+					{
+						"role": "Inspector",
+						"connections": [
+							{"to": "Deputy Inspector", "weight": 10},
+						],
+					},
+					{
+						"role": "Deputy Inspector",
+						"connections": [
+							{"to": "Captain", "weight": 8},
+						],
+					},
+					{
+						"role": "Captain",
+						"connections": [
+							{"to": "Lieutenant", "weight": 6},
+						],
+					},
+					{
+						"role": "Lieutenant",
+						"connections": [
+							{"to": "Sergeant", "weight": 4},
+						],
+					},
+					{
+						"role": "Sergeant",
+						"connections": [
+							{"to": "Detective", "weight": 2},
+						],
+					},
+					{
+						"role": "Detective",
+						"connections": [
+							{"to": "Police Officer", "weight": 1},
+						],
+					},
+					{
+						"role": "Police Officer",
+						"connections": [],
+					},
+				]
+				
+				# Transform the connection logic into a more accessible format
+				connections_map = {item["role"]: item["connections"] for item in connection_logic}
+				
+				# Step 2: Reading from the CSV file and processing the data
+				nodes = []
+				links = []  # Initialized to generate meaningful links based on role connections
+				
+				# Assuming the path is updated to the correct CSV location
+				csv_file_path = "process2_morethan25.csv"
+				
+				# Read the CSV data, ensuring correct handling of delimiters and column headers
+				# Read the CSV data, converting officers to a list for reusability
+				with open(csv_file_path, mode="r", encoding="utf-8-sig") as file:
+					reader = csv.DictReader(file)
+					officers = list(reader)  # Convert to a list to iterate multiple times
+				
+				# Generate nodes from officers
+				for officer in officers:
+					# skip Total_Abuse_count > 3 case
+				
+					nodes.append(
+						{
+							"id": officer["full_name"],
+							"total_abuse_count": int(officer["Total_Abuse_count"]),
+							"rank_incident": officer["rank_incident"],
+							"precinct": int(officer["precinct"]),
+						}
+					)
+				
+				
+				# Generate links based on precinct and role connections
+				for officer in officers:
+					officer_role = officer["rank_incident"]
+					officer_precinct = int(officer["precinct"])
+					for connection in connections_map.get(officer_role, []):
+						target_role = connection["to"]
+						weight = connection["weight"]
+						# Find officers in the same precinct with the target role
+						for target_officer in [
+							o
+							for o in officers
+							if int(o["precinct"]) == officer_precinct
+							and o["rank_incident"] == target_role
+						]:
+							links.append(
+								{
+									"source": officer["full_name"],
+									"target": target_officer["full_name"],
+									"value": weight,
+								}
+							)
+				
+				# Step 3: Writing the processed data to a JSON file
+				json_data = {"nodes": nodes, "links": links}
+				json_file_path = "process2_processed2-25.json"
+				with open(json_file_path, "w") as json_file:
+					json.dump(json_data, json_file, indent=4)
+				
+				json_file_path
+				
+
+			</code></pre>
+
+			</section>
+		</main>
+		<main>
+			<section>
+				<h2>Final Reflection</h2>
+
+				<p>Through the analysis of police misconduct data, the project critically evaluates how data
+					visualization techniques can be employed to shape narratives and influence perceptions.</p>
+
+				<p>The exploration of whether police misconduct in New York is a collective or individual phenomenon
+					highlights the power of visualization in framing social issues. By employing both persuasive and
+					deceptive visualization strategies, the project demonstrates how data, when presented selectively or
+					with particular design choices, can lead to vastly different interpretations. The persuasive
+					visualization suggesting a collective nature of misconduct prompts considerations of systemic issues
+					within the NYPD, while the deceptive visualization portraying misconduct as an individualized
+					problem shifts the focus away from structural reforms.</p>
+
+				<p>The process of data transformation and visualization design underscores the meticulous attention to
+					detail required in data science. Through the cleaning, pivoting, and mapping of data, alongside the
+					thoughtful consideration of design elements such as color scales and positional arrangements, the
+					project illustrates the complexity behind effective and ethical data visualization practices.</p>
+
+				<p>Furthermore, the project raises important questions about accountability, transparency, and the role
+					of data in public discourse. It invites a broader discussion on the ethics of data representation
+					and the responsibilities of data scientists in ensuring that their work does not mislead or
+					manipulate but rather informs and enlightens.</p>
+
+				<p>In conclusion, the project serves as a compelling case study on the dual potential of data
+					visualization to both clarify and cloud the truth. It highlights the necessity for critical literacy
+					in interpreting visual data and calls for a balanced approach that acknowledges the nuances and
+					complexities of social phenomena like police misconduct. As we move forward, let us be guided by a
+					commitment to integrity, transparency, and the pursuit of justice in our engagement with data and
+					its many interpretations.</p>
+
+			</section>
+		</main>
 </body>
 
 </html>
